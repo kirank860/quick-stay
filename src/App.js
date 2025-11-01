@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import Footer from './components/Footer'
 import AllRooms from './Pages/AllRooms'
 import RoomDetails from './components/RoomDetails'
+import Mybookings from './Pages/Mybookings'
 
 const App = () => {
   const isOwnerpath=useLocation().pathname.includes("owner")
@@ -16,6 +17,7 @@ const App = () => {
   <Route path='/' element={<Home/>}/>
   <Route path='/rooms' element={<AllRooms/>}/>
   <Route path='/rooms/:id' element={<RoomDetails/>}/>
+  <Route path='/my-bookings' element={<Mybookings/>}/>
    </Routes>
 </div>
 <Footer/>
